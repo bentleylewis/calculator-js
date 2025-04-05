@@ -1,0 +1,46 @@
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#dceaf9;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    background-color: #2c2c2c;
+    width: 400px;
+    height: 500px;
+    border-radius: 6px;
+}
+
+#calcDisplay {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-color: #e0e0e0; 
+    color: black;
+    border: 6px solid black;
+    font-size: 20px;
+    height: 80px;
+    padding-right: 20px;
+    margin: 16px;
+}
+
+.number {
+    background-color: dodgerblue;
+}
+
+.function {
+    background-color: teal;
+}
+
+.operator {
+    background-color: #ff6b6b;
+}
