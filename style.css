@@ -18,6 +18,8 @@ body {
     width: 400px;
     height: 500px;
     border-radius: 6px;
+    display: flex;
+    flex-direction: column;
 }
 
 #calcDisplay {
@@ -31,6 +33,38 @@ body {
     height: 80px;
     padding-right: 20px;
     margin: 16px;
+}
+
+
+#rowContainer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-bottom: 8px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    margin: 0 16px;
+    background-color:#2c2c2c;
+}
+
+.row button {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #2c2c2c;
+    border-radius: 12px;
+    font-size: 28px;
+    
+}
+
+
+#zero {
+    flex: 2.2;
 }
 
 .number {
