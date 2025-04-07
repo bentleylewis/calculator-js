@@ -67,6 +67,9 @@ body {
     
 }
 
+.activeOperator {
+    background-color: #ffc107 !important;
+}
 
 .number:active, .function:active {
     filter: brightness(1.4);
