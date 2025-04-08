@@ -97,3 +97,7 @@ body {
 #equal {
     background-color: #ff6b6b;
 }
+
+#equal:active {
+    filter: brightness(1.8);
+}
