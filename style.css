@@ -71,6 +71,7 @@ body {
     background-color: #ffc107 !important;
 }
 
+
 .number:active, .function:active {
     filter: brightness(1.4);
 }
@@ -90,5 +91,9 @@ body {
 }
 
 .operator {
+    background-color: #ff6b6b;
+}
+
+#equal {
     background-color: #ff6b6b;
 }

@@ -6,6 +6,7 @@ let operator = null;
 const calcDisplay = document.getElementById("displayText");
 const numberButtons = document.querySelectorAll(".number");
 const operatorButtons = document.querySelectorAll(".operator");
+const equalButton = document.getElementById("equal");
 
 numberButtons.forEach(button => {
   button.addEventListener ("click", () => {
@@ -40,7 +41,8 @@ operatorButtons.forEach(button => {
 
 
 
-function operate(x, y, operator) {
+
+  function operate(x, y, operator) {
     switch(operator) {
       case "+":
          return x + y;
@@ -57,3 +59,21 @@ function operate(x, y, operator) {
     }
 
 }
+
+
+equalButton.addEventListener("click", () => {
+  if (x && operator && numString) {
+    y = numString;
+    const result = operate(Number(x), Number(y), operator);
+    console.log("hello");
+    console.log(x);
+    console.log(y);
+    console.log(operator);
+    console.log(result);
+    calcDisplay.textContent = result;
+    x = result;
+    y = null;
+    numString = "";
+    operator = null;
+  }
+})
